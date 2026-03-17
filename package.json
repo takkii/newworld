@@ -21,7 +21,7 @@
     "jn-server": "^1.0.5",
     "log4js": "^6.9.1",
     "node-fetch": "^3.3.2",
-    "npm-check-updates": "^19.6.3",
+    "npm-check-updates": "^19.6.5",
     "serve-favicon": "^2.5.1"
   },
   "devDependencies": {

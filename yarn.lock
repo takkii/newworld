@@ -282,9 +282,9 @@ finalhandler@^2.1.0:
     statuses "^2.0.1"
 
 flatted@^3.2.7:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.4.1.tgz#84ccd9579e76e9cc0d246c11d8be0beb019143e6"
-  integrity sha512-IxfVbRFVlV8V/yRaGzk0UVIcsKKHMSfYw66T/u4nTwlWteQePsxe//LjudR1AMX4tZW3WFCh3Zqa/sjlqpbURQ==
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.4.2.tgz#f5c23c107f0f37de8dbdf24f13722b3b98d52726"
+  integrity sha512-PjDse7RzhcPkIJwy5t7KPWQSZ9cAbzQXcafsetQoD7sOJRQlGikNbx7yZp2OotDnJyrDcbyRq3Ttb18iYOqkxA==
 
 formdata-polyfill@^4.0.10:
   version "4.0.10"
@@ -475,10 +475,10 @@ node-fetch@^3.3.2:
     fetch-blob "^3.1.4"
     formdata-polyfill "^4.0.10"
 
-npm-check-updates@^19.6.3:
-  version "19.6.3"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-19.6.3.tgz#bd3012eab637d0502e87134c323e5b08cbf9c079"
-  integrity sha512-VAt9Bp26eLaymZ0nZyh5n/by+YZIuegXlvWR0yv1zBqd984f8VnEnBbn+1lS3nN5LyEjn62BJ+yYgzNSpb6Gzg==
+npm-check-updates@^19.6.5:
+  version "19.6.5"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-19.6.5.tgz#ed3a79c6857d66951d0dbe275368f6d337d80c1f"
+  integrity sha512-XlBUMC30relXfEerrnX239W9iB30U6Woz0Hj42Sv6iSF4EGOvj2mS2r45sZ3RglH0VPBxXOWooMxObZ/SMZhrw==
 
 object-inspect@^1.13.3:
   version "1.13.4"
