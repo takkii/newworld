@@ -1,27 +1,26 @@
 ### 環境構築
 
 ```markdown
-# 複製
+# Clone, json-server
 git clone git@github.com:takkii/json-server.git
 
-# バックアップ
+# backup
 npm install -g jn-server
 cd json-server/bin
 node jns.js
 
-# 複製
+# Clone, overdrive
 git clone git@github.com:takkii/overdrive.git
 
-# ひな形、 RubyGems/sheltered-girlが必要です。
+# Templete, Needing RubyGems/sheltered-girl.
 heat branch overdrive takkii overdrive main
-
 cd overdrive/json
 
-# TypeScript コンパイル && Node.jsを実行します。
-tsc toss.ts && node toss.js
+# ts-node/install
+npm install -g ts-node
 
-# Node.jsを実行します。
-node toss.js
+# toss/run
+ts-node toss.ts
 ```
 
-※ Javascriptで、JSON RESTful Serverを操作するように変更しました。
+※ Typescriptで、JSON RESTful Serverを操作するように変更しました。
