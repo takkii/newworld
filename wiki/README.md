@@ -12,6 +12,7 @@ yarn upgrade
 ```markdown
 # npm / install
 npm install -g ts-node
+npm install -g forever
 npm install -g jn-server
 
 # json-server / starting
@@ -30,17 +31,14 @@ ts-node toss.ts
 # Move, newworld project.
 cd ..
 
-# http://localhost
-ts-node app.ts 80
+# http://localhost:3000
+ts-node app.ts 3000
 
-# https://github.com/foreversd/forever?tab=readme-ov-file
-npm install -g forever
+# Start, perpetuation.
+forever start -v -c ts-node app.ts 3000
 
-# VPS, Start.
-forever start app.js 80
-
-# VPS, Stop.
-forever stop app.js
+# Stop, perpetuation.
+forever stop app.ts
 ```
 
 ##### ※ 単語があるかないか検索🔎→⭕️ヒット、画面上部に移動します。
