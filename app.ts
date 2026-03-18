@@ -1,6 +1,13 @@
 import fetch from 'node-fetch';
 import {existsSync, readFileSync} from 'node:fs';
-import * as log4js from 'log4js';
+import log4js from 'log4js';
+import express from 'express';
+import favicon from 'serve-favicon';
+import path from 'path';
+import {fileURLToPath} from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 class Env {
     app: any;
@@ -8,9 +15,6 @@ class Env {
 
     constructor() {
         // https://expressjs.com/ja/5x/api.html
-        const express = require('express');
-        const favicon = require('serve-favicon')
-        const path = require('path')
         this.app = express();
         const mask = process.argv[2]
         const port = process.env.PORT || mask;
@@ -189,7 +193,7 @@ class Env {
                 neovim: any;
                 jetbrains: any;
                 reason: any;
-                settings: any;
+                configuration: any;
                 plugins: any;
                 ides: any;
                 copy: any;
@@ -221,11 +225,6 @@ class Env {
 
             try {
                 const controller = new AbortController();
-                const timeoutId = setTimeout(() => {
-                    controller.abort();
-                }, 5000);
-
-                const {platform} = require('node:process');
 
                 if (process.platform === "win32") {
                     const response = await fetch('http://localhost:1337/datas', {
@@ -250,7 +249,7 @@ class Env {
                     res.locals.neovim = jsonObject.neovim;
                     res.locals.jetbrains = jsonObject.jetbrain;
                     res.locals.reason = jsonObject.reason;
-                    res.locals.settings = (jsonObject.settings).toString();
+                    res.locals.configuration = jsonObject.configuration;
                     res.locals.plugins = jsonObject.plugins;
                     res.locals.ides = jsonObject.ides;
                     res.locals.copy = jsonObject.copyright;
@@ -300,7 +299,7 @@ class Env {
                     res.locals.neovim = jsonObject.neovim;
                     res.locals.jetbrains = jsonObject.jetbrain;
                     res.locals.reason = jsonObject.reason;
-                    res.locals.settings = (jsonObject.settings).toString();
+                    res.locals.configuration = jsonObject.configuration;
                     res.locals.plugins = jsonObject.plugins;
                     res.locals.ides = jsonObject.ides;
                     res.locals.copy = jsonObject.copyright;
@@ -350,7 +349,7 @@ class Env {
                     res.locals.neovim = jsonObject.neovim;
                     res.locals.jetbrains = jsonObject.jetbrain;
                     res.locals.reason = jsonObject.reason;
-                    res.locals.settings = (jsonObject.settings).toString();
+                    res.locals.configuration = jsonObject.configuration;
                     res.locals.plugins = jsonObject.plugins;
                     res.locals.ides = jsonObject.ides;
                     res.locals.copy = jsonObject.copyright;
