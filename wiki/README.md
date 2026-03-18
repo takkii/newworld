@@ -18,20 +18,17 @@ node jns
 
 # New Tab or Window.
 
+# ts-node install
+npm install -g ts-node
+
 # Move to Project.
 cd overdrive/json
 
-# TypeScript compile && Node.js run
-tsc toss.ts && node toss.js
-
 # Node.js run
-node toss.js
+ts-node toss.ts
 
-# Compiled with typescript.
-tsc app.ts
-
-# Start, http://localhost
-node app.js 80
+# http://localhost
+ts-node app.ts 80
 
 # https://github.com/foreversd/forever?tab=readme-ov-file
 npm install -g forever
@@ -61,16 +58,22 @@ yarn licenses v1.22.22
 │  ├─ log4js@6.9.1
 │  │  ├─ URL: https://github.com/log4js-node/log4js-node.git
 │  │  └─ VendorUrl: https://log4js-node.github.io/log4js-node/
-│  └─ npm-check-updates@19.6.3
-│     ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
-│     ├─ VendorName: Tomas Junnonen
-│     └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
+│  ├─ npm-check-updates@19.6.5
+│  │  ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
+│  │  ├─ VendorName: Tomas Junnonen
+│  │  └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
+│  └─ typescript@5.9.3
+│     ├─ URL: https://github.com/microsoft/TypeScript.git
+│     ├─ VendorName: Microsoft Corp.
+│     └─ VendorUrl: https://www.typescriptlang.org/
 ├─ BSD-3-Clause
+│  ├─ diff@4.0.4
+│  │  └─ URL: git://github.com/kpdecker/jsdiff.git
 │  └─ qs@6.15.0
 │     ├─ URL: https://github.com/ljharb/qs.git
 │     └─ VendorUrl: https://github.com/ljharb/qs
 ├─ ISC
-│  ├─ flatted@3.4.1
+│  ├─ flatted@3.4.2
 │  │  ├─ URL: git+https://github.com/WebReflection/flatted.git
 │  │  ├─ VendorName: Andrea Giammarchi
 │  │  └─ VendorUrl: https://github.com/WebReflection/flatted#readme
@@ -78,6 +81,10 @@ yarn licenses v1.22.22
 │  │  └─ URL: https://github.com/isaacs/node-graceful-fs
 │  ├─ inherits@2.0.4
 │  │  └─ URL: git://github.com/isaacs/inherits
+│  ├─ make-error@1.3.6
+│  │  ├─ URL: git://github.com/JsCommunity/make-error.git
+│  │  ├─ VendorName: Julien Fontanet
+│  │  └─ VendorUrl: https://github.com/JsCommunity/make-error
 │  ├─ once@1.4.0
 │  │  ├─ URL: git://github.com/isaacs/once
 │  │  ├─ VendorName: Isaac Z. Schlueter
@@ -91,9 +98,29 @@ yarn licenses v1.22.22
 │     ├─ VendorName: Isaac Z. Schlueter
 │     └─ VendorUrl: https://github.com/npm/wrappy
 └─ MIT
+   ├─ @cspotcode/source-map-support@0.8.1
+   │  └─ URL: https://github.com/cspotcode/node-source-map-support
+   ├─ @jridgewell/resolve-uri@3.1.2
+   │  ├─ URL: https://github.com/jridgewell/resolve-uri
+   │  └─ VendorName: Justin Ridgewell
+   ├─ @jridgewell/sourcemap-codec@1.5.5
+   │  ├─ URL: git+https://github.com/jridgewell/sourcemaps.git
+   │  ├─ VendorName: Justin Ridgewell
+   │  └─ VendorUrl: https://github.com/jridgewell/sourcemaps/tree/main/packages/sourcemap-codec
+   ├─ @jridgewell/trace-mapping@0.3.9
+   │  ├─ URL: git+https://github.com/jridgewell/trace-mapping.git
+   │  └─ VendorName: Justin Ridgewell
    ├─ @popperjs/core@2.11.8
    │  ├─ URL: https://github.com/popperjs/popper-core.git
    │  └─ VendorName: Federico Zivolo
+   ├─ @tsconfig/node10@1.0.12
+   │  └─ URL: https://github.com/tsconfig/bases.git
+   ├─ @tsconfig/node12@1.0.11
+   │  └─ URL: https://github.com/tsconfig/bases.git
+   ├─ @tsconfig/node14@1.0.3
+   │  └─ URL: https://github.com/tsconfig/bases.git
+   ├─ @tsconfig/node16@1.0.4
+   │  └─ URL: https://github.com/tsconfig/bases.git
    ├─ @types/body-parser@1.19.6
    │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
    │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/body-parser
@@ -129,6 +156,15 @@ yarn licenses v1.22.22
    │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/serve-static
    ├─ accepts@2.0.0
    │  └─ URL: https://github.com/jshttp/accepts.git
+   ├─ acorn-walk@8.3.5
+   │  ├─ URL: https://github.com/acornjs/acorn.git
+   │  └─ VendorUrl: https://github.com/acornjs/acorn
+   ├─ acorn@8.16.0
+   │  ├─ URL: git+https://github.com/acornjs/acorn.git
+   │  └─ VendorUrl: https://github.com/acornjs/acorn
+   ├─ arg@4.1.3
+   │  ├─ URL: https://github.com/zeit/arg.git
+   │  └─ VendorName: Josh Junon
    ├─ body-parser@2.2.2
    │  └─ URL: https://github.com/expressjs/body-parser.git
    ├─ bootstrap@5.3.8
@@ -159,6 +195,8 @@ yarn licenses v1.22.22
    ├─ cookie@0.7.2
    │  ├─ URL: https://github.com/jshttp/cookie.git
    │  └─ VendorName: Roman Shtylman
+   ├─ create-require@1.1.1
+   │  └─ URL: https://github.com/nuxt-contrib/create-require.git
    ├─ data-uri-to-buffer@4.0.1
    │  ├─ URL: git://github.com/TooTallNate/node-data-uri-to-buffer.git
    │  ├─ VendorName: Nathan Rajlich
@@ -367,6 +405,10 @@ yarn licenses v1.22.22
    ├─ toidentifier@1.0.1
    │  ├─ URL: https://github.com/component/toidentifier.git
    │  └─ VendorName: Douglas Christopher Wilson
+   ├─ ts-node@10.9.2
+   │  ├─ URL: git://github.com/TypeStrong/ts-node.git
+   │  ├─ VendorName: Blake Embrey
+   │  └─ VendorUrl: https://typestrong.org/ts-node
    ├─ type-is@2.0.1
    │  └─ URL: https://github.com/jshttp/type-is.git
    ├─ undici-types@7.18.2
@@ -379,14 +421,21 @@ yarn licenses v1.22.22
    ├─ unpipe@1.0.0
    │  ├─ URL: https://github.com/stream-utils/unpipe.git
    │  └─ VendorName: Douglas Christopher Wilson
+   ├─ v8-compile-cache-lib@3.0.1
+   │  ├─ URL: https://github.com/cspotcode/v8-compile-cache-lib.git
+   │  └─ VendorName: Andrew Bradley
    ├─ vary@1.1.2
    │  ├─ URL: https://github.com/jshttp/vary.git
    │  └─ VendorName: Douglas Christopher Wilson
-   └─ web-streams-polyfill@3.3.3
-      ├─ URL: git+https://github.com/MattiasBuelens/web-streams-polyfill.git
-      ├─ VendorName: Mattias Buelens
-      └─ VendorUrl: https://github.com/MattiasBuelens/web-streams-polyfill#readme
-Done in 0.44s.
+   ├─ web-streams-polyfill@3.3.3
+   │  ├─ URL: git+https://github.com/MattiasBuelens/web-streams-polyfill.git
+   │  ├─ VendorName: Mattias Buelens
+   │  └─ VendorUrl: https://github.com/MattiasBuelens/web-streams-polyfill#readme
+   └─ yn@3.1.1
+      ├─ URL: https://github.com/sindresorhus/yn.git
+      ├─ VendorName: Sindre Sorhus
+      └─ VendorUrl: sindresorhus.com
+Done in 0.45s.
 ```
 
-> ChangeLogs: 2026/03/15
+> ChangeLogs: 2026/03/18
