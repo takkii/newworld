@@ -10,22 +10,25 @@ yarn upgrade
 ```
 
 ```markdown
-# json-server starting ...
-git clone git@github.com:takkii/json-server.git
+# npm / install
+npm install -g ts-node
 npm install -g jn-server
+
+# json-server / starting
+git clone git@github.com:takkii/json-server.git
 cd json-server/bin
-node jns
+ts-node jns.ts
 
 # New Tab or Window.
-
-# ts-node install
-npm install -g ts-node
 
 # Move to Project.
 cd newworld/json
 
 # Node.js run
 ts-node toss.ts
+
+# Move, newworld project.
+cd ..
 
 # http://localhost
 ts-node app.ts 80
