@@ -6,7 +6,7 @@
   "neovim": "Neovim環境の構築することを止めました。",
   "jetbrain": "→ JetBrains製IDEsに移行のためです。",
   "reason": "「理由として挙げられる2点」",
-  "settings": "1. 設定ファイルが多く調整が必要なこと。",
+  "configuration": "1. 設定ファイルが多く調整が必要なこと。",
   "plugins": "2. プラグインの入れ替えや仕様の変更に対応すること。",
   "ides": "※ IDEsを使いましょう、時間が大事です。",
   "copyright": "Copyright &copy; 2025 Takayuki Kamiyama.",
