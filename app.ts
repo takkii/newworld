@@ -31,13 +31,13 @@ class Env {
         }, res: any, next: () => void) => {
             log4js.configure({
                 appenders: {
-                    overdrive: {
-                        type: "file", filename: "./logs/overdrive.log",
+                    newworld: {
+                        type: "file", filename: "./logs/newworld.log",
                         maxLogSize: 10 * 1024 * 1024,
                         backups: 5, compress: true
                     }
                 },
-                categories: {default: {appenders: ["overdrive"], level: "error"}},
+                categories: {default: {appenders: ["newworld"], level: "error"}},
             });
             const logger = log4js.getLogger();
             logger.level = "debug";
