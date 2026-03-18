@@ -2,7 +2,7 @@
 
 <div align="center">
   <br />
-  <h1><p><a href="https://youtu.be/fap4OGIeaW4?si=yBbFnSp0Pk_4cXBc">OverDrive</a> Project.</p></h1>
+  <h1><p><a href="https://youtu.be/fap4OGIeaW4?si=yBbFnSp0Pk_4cXBc">Newworld</a> Project.</p></h1>
   <img src="./images/startpage.gif">
   <br /><br />
   <h3><p>※ このシステムは、接続元のIPアドレスをログに書き出します。</p></h3>
