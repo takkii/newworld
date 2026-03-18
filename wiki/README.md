@@ -22,7 +22,7 @@ node jns
 npm install -g ts-node
 
 # Move to Project.
-cd overdrive/json
+cd newworld/json
 
 # Node.js run
 ts-node toss.ts

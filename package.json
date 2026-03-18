@@ -1,6 +1,6 @@
 {
-  "name": "overdrive",
-  "version": "1.0.3.2",
+  "name": "newworld",
+  "version": "1.5.0",
   "description": "Frontend Side for overdrive.",
   "main": "app.js",
   "type": "module",
