@@ -49,18 +49,16 @@ class Env {
                 if (existsSync(`${json_data}`)) {
                     const data = JSON.parse(readFileSync(`${json_data}`, 'utf8'));
 
-                    if (`${ipAddress}` == data["1"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["2"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["3"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["4"]) {
-                        res.render("error")
-                        return;
+                    let sum = 0;
+                    let num = 4;
+
+                    for (let i = 1; i <= num; i++) {
+                        sum += i
+
+                        if (`${ipAddress}` == data[`${sum}`]) {
+                            res.render("error")
+                            return;
+                        }
                     }
 
                 } else {
@@ -79,99 +77,15 @@ class Env {
                 if (existsSync(`${json_data}`)) {
                     const data = JSON.parse(readFileSync(`${json_data}`, 'utf8'));
 
-                    if (`${ipAddress}` == data["1"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["2"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["3"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["4"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["5"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["6"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["7"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["8"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["9"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["10"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["11"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["12"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["13"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["14"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["15"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["16"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["17"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["18"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["19"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["20"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["21"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["22"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["23"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["24"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["25"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["26"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["27"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["28"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["29"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["30"]) {
-                        res.render("error")
-                        return;
-                    } else if (`${ipAddress}` == data["31"]) {
-                        res.render("error")
-                        return;
+                    let sum = 0
+                    let num = 31;
+
+                    for (let i = 1; i <= num; i++) {
+                        sum += i
+                        if (`${ipAddress}` == data[`${sum}`]) {
+                            res.render("error")
+                            return;
+                        }
                     }
                 } else {
                     console.log('File Not Found ' + `${json_data}`);
