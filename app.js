@@ -38,14 +38,17 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var node_fetch_1 = require("node-fetch");
 var node_fs_1 = require("node:fs");
-var log4js = require("log4js");
+var log4js_1 = require("log4js");
+var express_1 = require("express");
+var serve_favicon_1 = require("serve-favicon");
+var path_1 = require("path");
+var url_1 = require("url");
+var __filename = (0, url_1.fileURLToPath)(import.meta.url);
+var __dirname = path_1.default.dirname(__filename);
 var Env = /** @class */ (function () {
     function Env() {
         // https://expressjs.com/ja/5x/api.html
-        var express = require('express');
-        var favicon = require('serve-favicon');
-        var path = require('path');
-        this.app = express();
+        this.app = (0, express_1.default)();
         var mask = process.argv[2];
         var port = process.env.PORT || mask;
         this.server = this.app.listen(port, function () {
@@ -57,43 +60,36 @@ var Env = /** @class */ (function () {
             });
         });
         // https://expressjs.com/ja/starter/static-files.html
-        this.app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-        this.app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
-        this.app.use(express.static('public'));
+        this.app.use((0, serve_favicon_1.default)(path_1.default.join(__dirname, 'public', 'favicon.ico')));
+        this.app.use('/bootstrap', express_1.default.static(path_1.default.join(__dirname, 'node_modules/bootstrap/dist')));
+        this.app.use(express_1.default.static('public'));
         this.app.set('view engine', 'ejs');
         this.app.use(function (req, res, next) {
-            log4js.configure({
+            log4js_1.default.configure({
                 appenders: {
-                    overdrive: {
-                        type: "file", filename: "./logs/overdrive.log",
+                    newworld: {
+                        type: "file", filename: "./logs/newworld.log",
                         maxLogSize: 10 * 1024 * 1024,
                         backups: 5, compress: true
                     }
                 },
-                categories: { default: { appenders: ["overdrive"], level: "error" } },
+                categories: { default: { appenders: ["newworld"], level: "error" } },
             });
-            var logger = log4js.getLogger();
+            var logger = log4js_1.default.getLogger();
             logger.level = "debug";
             if ("".concat(req.ip) == "undefined") {
                 var ipAddress = "".concat(req.connection.remoteAddress);
                 var json_data = './logs/blacklist_v6.json';
                 if ((0, node_fs_1.existsSync)("".concat(json_data))) {
                     var data = JSON.parse((0, node_fs_1.readFileSync)("".concat(json_data), 'utf8'));
-                    if ("".concat(ipAddress) == data["1"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["2"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["3"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["4"]) {
-                        res.render("error");
-                        return;
+                    var sum = 0;
+                    var num = 4;
+                    for (var i = 1; i <= num; i++) {
+                        sum += i;
+                        if ("".concat(ipAddress) == data["".concat(sum)]) {
+                            res.render("error");
+                            return;
+                        }
                     }
                 }
                 else {
@@ -109,129 +105,14 @@ var Env = /** @class */ (function () {
                 var json_data = './logs/blacklist_v4.json';
                 if ((0, node_fs_1.existsSync)("".concat(json_data))) {
                     var data = JSON.parse((0, node_fs_1.readFileSync)("".concat(json_data), 'utf8'));
-                    if ("".concat(ipAddress) == data["1"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["2"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["3"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["4"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["5"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["6"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["7"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["8"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["9"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["10"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["11"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["12"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["13"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["14"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["15"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["16"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["17"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["18"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["19"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["20"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["21"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["22"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["23"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["24"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["25"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["26"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["27"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["28"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["29"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["30"]) {
-                        res.render("error");
-                        return;
-                    }
-                    else if ("".concat(ipAddress) == data["31"]) {
-                        res.render("error");
-                        return;
+                    var sum = 0;
+                    var num = 31;
+                    for (var i = 1; i <= num; i++) {
+                        sum += i;
+                        if ("".concat(ipAddress) == data["".concat(sum)]) {
+                            res.render("error");
+                            return;
+                        }
                     }
                 }
                 else {
@@ -245,19 +126,15 @@ var Env = /** @class */ (function () {
     Env.prototype.run = function () {
         this.app.get('/', function (req, res) {
             return __awaiter(this, void 0, void 0, function () {
-                var controller_1, timeoutId, platform, response, data, jsonString, jsonObject, response, data, jsonString, jsonObject, response, data, jsonString, jsonObject, error_1;
+                var controller, response, data, jsonString, jsonObject, response, data, jsonString, jsonObject, response, data, jsonString, jsonObject, error_1;
                 return __generator(this, function (_a) {
                     switch (_a.label) {
                         case 0:
                             _a.trys.push([0, 10, 11, 12]);
-                            controller_1 = new AbortController();
-                            timeoutId = setTimeout(function () {
-                                controller_1.abort();
-                            }, 5000);
-                            platform = require('node:process').platform;
+                            controller = new AbortController();
                             if (!(process.platform === "win32")) return [3 /*break*/, 3];
                             return [4 /*yield*/, (0, node_fetch_1.default)('http://localhost:1337/datas', {
-                                    signal: controller_1.signal,
+                                    signal: controller.signal,
                                     method: 'GET',
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -280,7 +157,7 @@ var Env = /** @class */ (function () {
                             res.locals.neovim = jsonObject.neovim;
                             res.locals.jetbrains = jsonObject.jetbrain;
                             res.locals.reason = jsonObject.reason;
-                            res.locals.settings = (jsonObject.settings).toString();
+                            res.locals.configuration = jsonObject.configuration;
                             res.locals.plugins = jsonObject.plugins;
                             res.locals.ides = jsonObject.ides;
                             res.locals.copy = jsonObject.copyright;
@@ -310,7 +187,7 @@ var Env = /** @class */ (function () {
                         case 3:
                             if (!(process.platform === "linux")) return [3 /*break*/, 6];
                             return [4 /*yield*/, (0, node_fetch_1.default)('http://localhost:1337/datas', {
-                                    signal: controller_1.signal,
+                                    signal: controller.signal,
                                     method: 'GET',
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -333,7 +210,7 @@ var Env = /** @class */ (function () {
                             res.locals.neovim = jsonObject.neovim;
                             res.locals.jetbrains = jsonObject.jetbrain;
                             res.locals.reason = jsonObject.reason;
-                            res.locals.settings = (jsonObject.settings).toString();
+                            res.locals.configuration = jsonObject.configuration;
                             res.locals.plugins = jsonObject.plugins;
                             res.locals.ides = jsonObject.ides;
                             res.locals.copy = jsonObject.copyright;
@@ -361,7 +238,7 @@ var Env = /** @class */ (function () {
                             res.locals.spa_cm = jsonObject.spa_cm;
                             return [3 /*break*/, 9];
                         case 6: return [4 /*yield*/, (0, node_fetch_1.default)('http://0.0.0.0:1337/datas', {
-                                signal: controller_1.signal,
+                                signal: controller.signal,
                                 method: 'GET',
                                 headers: {
                                     'Content-Type': 'application/json'
@@ -384,7 +261,7 @@ var Env = /** @class */ (function () {
                             res.locals.neovim = jsonObject.neovim;
                             res.locals.jetbrains = jsonObject.jetbrain;
                             res.locals.reason = jsonObject.reason;
-                            res.locals.settings = (jsonObject.settings).toString();
+                            res.locals.configuration = jsonObject.configuration;
                             res.locals.plugins = jsonObject.plugins;
                             res.locals.ides = jsonObject.ides;
                             res.locals.copy = jsonObject.copyright;
