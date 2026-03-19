@@ -1,25 +1,27 @@
 ### 環境構築
 
 ```markdown
-# Clone, json-server
+# Backup.
+npm install -g jn-server
+
+# Clone, json-server.
 git clone git@github.com:takkii/json-server.git
 
-# backup
-npm install -g jn-server
+# Start, jns.
 cd json-server/bin
-node jns.js
+ts-node jns.ts
 
-# Clone, overdrive
-git clone git@github.com:takkii/overdrive.git
+# Clone, newworld.
+git clone git@github.com:takkii/newworld.git
 
 # Templete, Needing RubyGems/sheltered-girl.
-heat branch overdrive takkii overdrive main
-cd overdrive/json
+heat branch newworld takkii newworld main
 
 # ts-node/install
 npm install -g ts-node
 
-# toss/run
+# Run, toss.ts
+cd newworld/json
 ts-node toss.ts
 ```
 
