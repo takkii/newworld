@@ -19,8 +19,9 @@
 <hr />
 
 <div align="center">
-  <p><h3>初期構成、newworld.log出力</h3></p>
+  <p><h3>出力結果</h3></p>
   <p><img src="../images/output.gif"></p>
+  <p><h4>127.0.0.1を4箇所、255.255.255.0を3個所ログに書き込んだ設定です。</h4></p>
 </div>
 
 <div align="center">
