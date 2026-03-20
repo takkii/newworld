@@ -1,28 +1,64 @@
-### 環境構築
+<hr />
 
-```markdown
-# Backup.
-npm install -g jn-server
+<div align="center">
+  <p><img src="../images/cats-paw.gif"></p>
+</div>
 
-# Clone, json-server.
-git clone git@github.com:takkii/json-server.git
+<hr />
 
-# Start, jns.
-cd json-server/bin
-ts-node jns.ts
+<div align="center">
+  <p><h1># Backup.</h1></p>
+  <p><h2><u>npm install -g jn-server</u></h2></p>
+</div>
 
-# Clone, newworld.
-git clone git@github.com:takkii/newworld.git
+<hr />
 
-# Templete, Needing RubyGems/sheltered-girl.
-heat branch newworld takkii newworld main
+<div align="center">
+  <p><h1># Clone, json-server.</h1></p>
+  <p><h2><u>git clone git@github.com:takkii/json-server.git</u></h2></p>
+</div>
 
-# ts-node/install
-npm install -g ts-node
+<hr />
 
-# Run, toss.ts
-cd newworld/json
-ts-node toss.ts
-```
+<div align="center">
+  <p><h1># Start, jns.</h1></p>
+  <p><h2><u>cd json-server/bin</u></h2></p>
+  <p><h2><u>ts-node jns.ts</u></h2></p>
+</div>
 
-※ Typescriptで、JSON RESTful Serverを操作するように変更しました。
+<hr />
+
+<div align="center">
+  <p><h1># Clone, newworld.</h1></p>
+  <p><h2><u>git clone git@github.com:takkii/newworld.git</u></h2></p>
+</div>
+
+<hr />
+
+<div align="center">
+  <p><h1># Templete, Needing RubyGems/sheltered-girl.</h1></p>
+  <p><h2><u>heat branch newworld takkii newworld main</u></h2></p>
+</div>
+
+<hr />
+
+<div align="center">
+  <p><h1># ts-node/install</h1></p>
+  <p><h2><u>npm install -g ts-node</u></h2></p>
+</div>
+
+<hr />
+
+<div align="center">
+  <p><h1># Run, toss.ts</h1></p>
+  <p><h2><u>cd newworld/json</u></h2></p>
+  <p><h2><u>ts-node toss.ts</u></h2></p>
+</div>
+
+<hr />
+
+<div align="center">
+   <p><h3>※ Typescriptで、JSON RESTful Serverを操作するように変更しました。</h3></p>
+</div>
+
+<hr />
