@@ -1,7 +1,11 @@
+<hr />
+
 <div align="center">
   <p><h1>データ集計を行います。</h1></p>
   <p><h2><u>python .\totalling.py newworld.log</u></h2></p>
 </div>
+
+<hr />
 
 <div align="center">
   <p><img src="../images/flask.gif"></p>
