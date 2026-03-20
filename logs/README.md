@@ -1,19 +1,24 @@
 ### データ集計を行います。
 
-```markdown
-# 集計
-python .\totalling.py newworld.log
-```
+<div align="center">
+  <p><h1>データ集計を行います。</h1></p>
+  <p><h2><u>python .\totalling.py newworld.log</u></h2></p>
+</div>
 
-```markdown
-# 初期構成、newworld.log出力
-[2026-03-19T06:56:39.033] (1)
-[DEBUG] (1)
-default (1)
-- (1)
-Client (1)
-IP (1)
-1 (1)
-```
+<div align="center">
+  <p><img src="../images/flask.gif"></p>
+</div>
 
-※ データ分析はPython3で行います。
+<hr />
+
+<div align="center">
+  <p><h3>初期構成、newworld.log出力</h3></p>
+  <p><img src="../images/output.gif"></p>
+</div>
+
+<div align="center">
+   <p><h3>※ データ分析はPython3で行います。</h3></p>
+</div>
+
+<hr />
+
