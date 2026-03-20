@@ -1,5 +1,6 @@
 import gc
 import os
+import re
 import sys
 import traceback
 
@@ -40,13 +41,18 @@ try:
         match_word = arg_sys[1]
         file_name = match_word
         freq = get_frequency(file_name)
+        regex = '^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]).){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$'
 
-        for word in sorted(freq, key=freq.get, reverse=True):
-            print(word + ' (' + str(freq[word]) + ')')
+        for word in sorted(freq, key=freq.get, reverse=True):  # type: ignore
+            matchObj = re.search(regex, word)
+
+            if matchObj:
+                print(matchObj.group() + ' (' + str(freq[word]) + ')')
 
 except ValueError as ext:
     print(ext)
     raise RuntimeError from None
+
 finally:
     # GC collection.
     gc.collect()
