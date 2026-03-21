@@ -42,7 +42,7 @@ try:
         file_name = match_word
         freq = get_frequency(file_name)
         regex = '^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]).){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$'
-        regex_v6 = '([0-9a-f]{3,4})'
+        regex_v6 = '([0-9a-z]{2,3}[^default])'
 
         for word in sorted(freq, key=freq.get, reverse=True):  # type: ignore
             match_v4 = re.search(regex, word)

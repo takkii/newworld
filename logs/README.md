@@ -1,35 +1,28 @@
-<hr />
-
 <div align="center">
-  <p><h1>データ集計を行います。</h1></p>
+  <p><h1>前処理</h1></p>
 </div>
-
-<hr />
 
 <div align="center">
   <p><img src="../images/flask.gif"></p>
 </div>
 
-<hr />
-
 <div align="center">
-  <p><h2><u>python .totalling.py newworld.log</u></h2></p>
+  <p><h2><u>python .\reilsaiden.py newworld.log</u></h2></p>
 </div>
-
-<hr />
 
 <div align="center">
   <p><h3>出力結果</h3></p>
   <p><img src="../images/output.gif"></p>
-  <p><h4>127.0.0.1、4箇所</h4></p>
-  <p><h4>255.255.255.0、3箇所</h4></p>
-  <p><h4>1a4、2箇所</h4></p>
-  <p><h4>a122、1箇所</h4></p>
-  <p><h4>※ 上記内容、ログに書き込みデータ加工後の前提です。</h4></p>
+  <br />
+  <table style=".my-table th; .my-table td border: 0.5vw solid #999;">
+  <tr><th></th><th><th></th></tr>
+  <tr><th>127.0.0.1</th><td>4箇所</td></tr>
+  <tr><th>255.255.255.0</th><td>3箇所</td></tr>
+  <tr><th>1a4</th><td>2箇所</td></tr>
+  <tr><th>a122</th><td>1箇所</td></tr>
+  </table>
 </div>
 
 <div align="center">
-   <p><h3>※ データ分析はPython3で行います。</h3></p>
+   <p><h3><u>※ 取得したIPアドレスをPython3でデータ分析します。</u></h3></p>
 </div>
-
-<hr />
