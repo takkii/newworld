@@ -13,9 +13,7 @@
 <div align="center">
   <p><h3>出力結果</h3></p>
   <p><img src="../images/output.gif"></p>
-  <br />
   <table style=".my-table th; .my-table td border: 0.5vw solid #999;">
-  <tr><th></th><th><th></th></tr>
   <tr><th>127.0.0.1</th><td>4箇所</td></tr>
   <tr><th>255.255.255.0</th><td>3箇所</td></tr>
   <tr><th>1a4</th><td>2箇所</td></tr>
