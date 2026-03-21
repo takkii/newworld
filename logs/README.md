@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <p><img src="../images/flask.gif"></p>
+  <p><img src="../images/reilsaiden.gif"></p>
 </div>
 
 <div align="center">
