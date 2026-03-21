@@ -13,7 +13,7 @@
 <hr />
 
 <div align="center">
-  <p><h2><u>python .\totalling.py newworld.log</u></h2></p>
+  <p><h2><u>python .totalling.py newworld.log</u></h2></p>
 </div>
 
 <hr />
@@ -21,7 +21,11 @@
 <div align="center">
   <p><h3>出力結果</h3></p>
   <p><img src="../images/output.gif"></p>
-  <p><h4>127.0.0.1を4箇所、255.255.255.0を3個所ログに書き込んだ設定です。</h4></p>
+  <p><h4>127.0.0.1、4箇所</h4></p>
+  <p><h4>255.255.255.0、3箇所</h4></p>
+  <p><h4>1a4、2箇所</h4></p>
+  <p><h4>a122、1箇所</h4></p>
+  <p><h4>※ 上記内容、ログに書き込みデータ加工後の前提です。</h4></p>
 </div>
 
 <div align="center">
@@ -29,4 +33,3 @@
 </div>
 
 <hr />
-
