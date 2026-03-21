@@ -42,12 +42,16 @@ try:
         file_name = match_word
         freq = get_frequency(file_name)
         regex = '^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]).){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$'
+        regex_v6 = '([0-9a-f]{3,4})'
 
         for word in sorted(freq, key=freq.get, reverse=True):  # type: ignore
-            matchObj = re.search(regex, word)
+            match_v4 = re.search(regex, word)
+            match_v6 = re.match(regex_v6, word)
 
-            if matchObj:
-                print(matchObj.group() + ' (' + str(freq[word]) + ')')
+            if match_v4:
+                print(match_v4.group() + ' (' + str(freq[word]) + ')')
+            elif match_v6:
+                print(match_v6.group() + ' (' + str(freq[word]) + ')')
 
 except ValueError as ext:
     print(ext)
