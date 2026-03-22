@@ -1,6 +1,8 @@
 <div align="center">
-  <p><h1>「強力な空間切断系の魔法に例えて」</h1></p>
+  <p><h1>「強力な空間切断系の魔法」</h1></p>
+　　<p><h3>※ 魔法レイルザイデンを言葉の比喩として使用しました。</h3></p>
 </div>
+
 
 <div align="center">
   <p><img src="../images/reilsaiden.gif"></p>
@@ -21,7 +23,6 @@
   <tr><th>undefined</th><td>1箇所</td></tr>
   </table>
 </div>
-
 <div align="center">
-   <p><h3><u>※ 取得したIPアドレスをPython3でデータ分析します。</u></h3></p>
+   <p><h3><u>※ 取得したIPアドレスをPython3でデータ分析(集計)します。</u></h3></p>
 </div>
