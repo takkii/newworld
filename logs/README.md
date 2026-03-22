@@ -18,6 +18,7 @@
   <tr><th>255.255.255.0</th><td>3箇所</td></tr>
   <tr><th>1a4</th><td>2箇所</td></tr>
   <tr><th>a122</th><td>1箇所</td></tr>
+  <tr><th>undefined</th><td>1箇所</td></tr>
   </table>
 </div>
 
