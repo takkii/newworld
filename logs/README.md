@@ -1,8 +1,7 @@
 <div align="center">
   <p><h1>「強力な空間切断系の魔法」</h1></p>
-　　<p><h3>※ 魔法レイルザイデンを言葉の比喩として使用しました。</h3></p>
+  <p><h3>※ 魔法レイルザイデンを言葉の比喩として使用しました。</h3></p>
 </div>
-
 
 <div align="center">
   <p><img src="../images/reilsaiden.gif"></p>
