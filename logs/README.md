@@ -1,5 +1,5 @@
 <div align="center">
-  <p><h1>前処理</h1></p>
+  <p><h1>「強力な空間切断系の魔法に例えて」</h1></p>
 </div>
 
 <div align="center">
@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-  <p><h2><u>python .\reilsaiden.py newworld.log</u></h2></p>
+  <p><h2><u>python .\railseiden.py newworld.log</u></h2></p>
 </div>
 
 <div align="center">
