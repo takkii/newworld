@@ -33,6 +33,7 @@ class Clarify(threading.Thread):
 try:
     thread = Clarify()
     thread.run()
+
 # Custom Exception, raise throw.
 except ValueError as ext:
     print(ext)
