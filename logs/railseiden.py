@@ -45,29 +45,37 @@ try:
         regex_v6 = '([0-9a-z]{2,3}[^default])'
         regex_ng = 'undefined'
 
-        with open("effect.txt", "w") as o:
-            for word in sorted(
-                    freq,
-                    key=freq.get,  # type: ignore
-                    reverse=True):
-                match_v4 = re.search(regex, word)
-                match_v6 = re.match(regex_v6, word)
-                match_ng = re.search(regex_ng, word)
+        try:
+            with open("effect.txt", mode='a') as f:
+                for word in sorted(
+                        freq,
+                        key=freq.get,  # type: ignore
+                        reverse=True):
+                    match_v4 = re.search(regex, word)
+                    match_v6 = re.match(regex_v6, word)
+                    match_ng = re.search(regex_ng, word)
 
-                if match_v4:
-                    print(match_v4.group() + ' (' + str(freq[word]) + ')',
-                          file=o)
-                elif match_v6:
-                    print(match_v6.group() + ' (' + str(freq[word]) + ')',
-                          file=o)
-                elif match_ng:
-                    print(match_ng.group() + ' (' + str(freq[word]) + ')',
-                          file=o)
+                    if match_v4:
+                        f.write(match_v4.group() + ' (' + str(freq[word]) +
+                                ')' + '\n')
+                    elif match_v6:
+                        f.write(match_v6.group() + ' (' + str(freq[word]) +
+                                ')' + '\n')
+                    elif match_ng:
+                        f.write(match_ng.group() + ' (' + str(freq[word]) +
+                                ')' + '\n')
+
+        except FileNotFoundError as fileno:
+            print('File not found to effect.txt')
+            print(fileno)
+            raise RuntimeError from None
+
+        finally:
+            print('Complete wrote, effect.txt')
 
 except ValueError as ext:
     print(ext)
     raise RuntimeError from None
 
 finally:
-    # GC collection.
     gc.collect()
