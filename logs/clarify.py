@@ -13,12 +13,12 @@ class Clarify(threading.Thread):
     def run(self):
         try:
             with open("./effect.txt", mode='r+', encoding='utf-8') as f:
-                test = f.read().splitlines()
+                word = f.read().splitlines()
 
                 # Count Top 15 output
-                target_lines = test[0:15]
-                for test in target_lines:
-                    print(test)
+                target_lines = word[0:15]
+                for word in target_lines:
+                    print(word)
 
         except FileNotFoundError as fileno:
             print('File not found to effect.txt')
