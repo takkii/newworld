@@ -45,17 +45,24 @@ try:
         regex_v6 = '([0-9a-z]{2,3}[^default])'
         regex_ng = 'undefined'
 
-        for word in sorted(freq, key=freq.get, reverse=True):  # type: ignore
-            match_v4 = re.search(regex, word)
-            match_v6 = re.match(regex_v6, word)
-            match_ng = re.search(regex_ng, word)
+        with open("effect.txt", "w") as o:
+            for word in sorted(
+                    freq,
+                    key=freq.get,  # type: ignore
+                    reverse=True):
+                match_v4 = re.search(regex, word)
+                match_v6 = re.match(regex_v6, word)
+                match_ng = re.search(regex_ng, word)
 
-            if match_v4:
-                print(match_v4.group() + ' (' + str(freq[word]) + ')')
-            elif match_v6:
-                print(match_v6.group() + ' (' + str(freq[word]) + ')')
-            elif match_ng:
-                print(match_ng.group() + ' (' + str(freq[word]) + ')')
+                if match_v4:
+                    print(match_v4.group() + ' (' + str(freq[word]) + ')',
+                          file=o)
+                elif match_v6:
+                    print(match_v6.group() + ' (' + str(freq[word]) + ')',
+                          file=o)
+                elif match_ng:
+                    print(match_ng.group() + ' (' + str(freq[word]) + ')',
+                          file=o)
 
 except ValueError as ext:
     print(ext)
