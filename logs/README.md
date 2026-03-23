@@ -27,6 +27,6 @@
 </div>
 
 <div align="center">
-   <p><h2><u>python .\count.py</u></h2></p>
-   <p><h3><u>※ effect.txtの15行目までのIPアドレスを表示します。</u></h3></p>
+   <p><h2><u>python .\clarify.py</u></h2></p>
+   <p><h3><u>※ 指定した行頭から15行目まで、effect.txt内のIPアドレスを表示します。</u></h3></p>
 </div>
