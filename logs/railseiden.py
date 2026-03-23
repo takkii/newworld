@@ -68,7 +68,7 @@ try:
         except FileNotFoundError as fileno:
             print('File not found to effect.txt')
             print(fileno)
-            raise RuntimeError from None
+            exit  # type: ignore
 
         finally:
             print('Complete wrote, effect.txt')
