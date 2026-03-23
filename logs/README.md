@@ -25,3 +25,8 @@
 <div align="center">
    <p><h3><u>※ データ分析(集計)の結果をeffect.txtに書き込みます。</u></h3></p>
 </div>
+
+<div align="center">
+   <p><h2><u>python .\count.py</u></h2></p>
+   <p><h3><u>※ effect.txtの15行目までのIPアドレスを表示します。</u></h3></p>
+</div>
