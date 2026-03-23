@@ -12,7 +12,7 @@
 </div>
 
 <div align="center">
-  <p><h3>出力結果</h3></p>
+  <p><h3>生成されるeffect.txtの内容</h3></p>
   <p><img src="../images/output.gif"></p>
   <table style=".my-table th; .my-table td border: 0.5vw solid #999;">
   <tr><th>127.0.0.1</th><td>4箇所</td></tr>
@@ -23,5 +23,5 @@
   </table>
 </div>
 <div align="center">
-   <p><h3><u>※ 取得したIPアドレスをPython3でデータ分析(集計)します。</u></h3></p>
+   <p><h3><u>※ データ分析(集計)の結果をeffect.txtに書き込みます。</u></h3></p>
 </div>
