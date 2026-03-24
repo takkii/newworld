@@ -41,7 +41,7 @@ forever start -v -c ts-node app.ts 3000
 forever stop app.ts
 ```
 
-##### ※ 単語があるかないか検索🔎→⭕️ヒット、画面上部に移動します。
+##### 単語があるかないか検索🔎→⭕️ヒット、画面上部に移動します。
 
 ##### ❎️None、「見つかりませんでした。」が表示されます。
 
@@ -63,7 +63,11 @@ yarn licenses v1.22.22
 │  │  ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
 │  │  ├─ VendorName: Tomas Junnonen
 │  │  └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
-│  └─ typescript@5.9.3
+│  ├─ typescript@5.9.3
+│  │  ├─ URL: https://github.com/microsoft/TypeScript.git
+│  │  ├─ VendorName: Microsoft Corp.
+│  │  └─ VendorUrl: https://www.typescriptlang.org/
+│  └─ typescript@6.0.2
 │     ├─ URL: https://github.com/microsoft/TypeScript.git
 │     ├─ VendorName: Microsoft Corp.
 │     └─ VendorUrl: https://www.typescriptlang.org/
@@ -436,7 +440,7 @@ yarn licenses v1.22.22
       ├─ URL: https://github.com/sindresorhus/yn.git
       ├─ VendorName: Sindre Sorhus
       └─ VendorUrl: sindresorhus.com
-Done in 0.37s.
+Done in 0.59s.
 ```
 
-> ChangeLogs: 2026/03/18
+> ChangeLogs: 2026/03/24
