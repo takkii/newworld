@@ -1,8 +1,8 @@
 {
   "name": "newworld",
-  "version": "1.5.4",
-  "description": "Frontend Side for overdrive.",
-  "main": "app.js",
+  "version": "1.5.5",
+  "description": "Frontend Side for newworld.",
+  "main": "app.ts",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,8 @@
   "keywords": [
     "expressjs",
     "frontend",
-    "localhost"
+    "localhost",
+    "vps"
   ],
   "author": "Takayuki Kamiyama",
   "license": "MIT",
@@ -25,7 +26,7 @@
     "npm-check-updates": "^19.6.5",
     "serve-favicon": "^2.5.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
