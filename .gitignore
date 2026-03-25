@@ -2,7 +2,7 @@
 .idea/*
 
 # Ignore VSCode configuration file.
-.vscode/*
+# .vscode/*
 
 # Ignore, Node.js dependency
 node_modules/*
