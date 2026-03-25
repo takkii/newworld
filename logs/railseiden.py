@@ -7,7 +7,7 @@ import traceback
 
 def get_frequency(file):
     try:
-        freq = {}
+        freq = {}  # type: dict
 
         with open(os.path.expanduser(file), mode='r+',
                   encoding='utf-8') as file_data:
