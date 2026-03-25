@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import {existsSync, readFileSync} from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 
 
 class Env {
@@ -27,7 +27,7 @@ class Env {
             }
 
         } catch
-            (error) {
+        (error) {
             console.error('Error: ', error);
         }
     }
