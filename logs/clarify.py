@@ -22,13 +22,13 @@ class Clarify(threading.Thread):
                       encoding='utf-8') as f:
                 word = f.read().splitlines()
 
-                # top line numbers
+                # first line number.
                 top_num = int(0)
 
-                # last line numbers
+                # End line number.
                 last_num = int(15)
 
-                # Count Top 15 output
+                # Specified, count line number to output.
                 target_lines = word[top_num:last_num]
                 for word in target_lines:
                     print(word)
