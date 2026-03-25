@@ -16,6 +16,7 @@ class Clarify(threading.Thread):
         try:
             arg_sys = sys.argv
             file_name = arg_sys[1]
+
             with open(os.path.expanduser(file_name),
                       mode='r+',
                       encoding='utf-8') as f:
