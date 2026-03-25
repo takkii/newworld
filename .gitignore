@@ -1,6 +1,9 @@
 # WebStorm configuration file.
 .idea/*
 
+# Ignore VSCode configuration file.
+.vscode/*
+
 # Ignore, Node.js dependency
 node_modules/*
 package-lock.json
