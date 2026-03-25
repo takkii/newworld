@@ -41,19 +41,19 @@ try:
         match_word = arg_sys[1]
         file_name = match_word
         freq = get_frequency(file_name)
-        regex = '^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]).){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$'
+        regex_v4 = '^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]).){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$'
         regex_v6 = '([0-9a-z]{2,3}[^default])'
-        regex_ng = 'undefined'
+        un_regex_word = 'undefined'
 
         try:
-            with open("effect.txt", mode='a') as f:
+            with open("./effect.txt", mode='a') as f:
                 for word in sorted(
                         freq,
                         key=freq.get,  # type: ignore
                         reverse=True):
-                    match_v4 = re.search(regex, word)
+                    match_v4 = re.search(regex_v4, word)
                     match_v6 = re.match(regex_v6, word)
-                    match_ng = re.search(regex_ng, word)
+                    un_match_word = re.search(un_regex_word, word)
 
                     if match_v4:
                         f.write(match_v4.group() + ' (' + str(freq[word]) +
@@ -61,9 +61,9 @@ try:
                     elif match_v6:
                         f.write(match_v6.group() + ' (' + str(freq[word]) +
                                 ')' + '\n')
-                    elif match_ng:
-                        f.write(match_ng.group() + ' (' + str(freq[word]) +
-                                ')' + '\n')
+                    elif un_match_word:
+                        f.write(un_match_word.group() + ' (' +
+                                str(freq[word]) + ')' + '\n')
 
         except FileNotFoundError as fileno:
             print('File not found to effect.txt')
