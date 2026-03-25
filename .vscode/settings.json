@@ -7,8 +7,10 @@
     "githubpages",
     "jetbrain",
     "Kamiyama",
+    "mypy",
     "newworld",
     "popperjs",
-    "Takayuki"
+    "Takayuki",
+    "venv"
   ]
 }

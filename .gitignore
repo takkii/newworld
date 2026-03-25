@@ -3,6 +3,8 @@
 
 # Ignore VSCode configuration file.
 # .vscode/*
+.mypy_cache/*
+.venv/*
 
 # Ignore, Node.js dependency
 node_modules/*
