@@ -30,7 +30,7 @@ class Clarify(threading.Thread):
 
                 # Specified, count line number to output.
                 target_lines = word[top_num:last_num]
-                for word in target_lines:
+                for word in target_lines:  # type: ignore
                     print(word)
 
         except FileNotFoundError as fileno:
