@@ -8,27 +8,27 @@ import traceback
 def get_frequency(file):
     try:
         freq = {}
-        file_data = open(os.path.expanduser(file))
-        file_data.close
 
-        for line in file_data:
-            words = line.split()
+        with open(os.path.expanduser(file), mode='r+',
+                  encoding='utf-8') as file_data:
+            for line in file_data:
+                words = line.split()
 
-            for word in words:
-                word = word.rstrip('.,:!?)"')
-                word = word.lstrip('("')
+                for word in words:
+                    word = word.rstrip('.,:!?)"')
+                    word = word.lstrip('("')
 
-                if word in freq:
-                    freq[word] += 1
-                else:
-                    freq[word] = 1
+                    if word in freq:
+                        freq[word] += 1
+                    else:
+                        freq[word] = 1
 
-        return freq
+            return freq
 
     # TraceBack.
     except Exception:
         db_w = os.path.expanduser('./debug.log')
-        with open(db_w, 'a') as log_py:
+        with open(db_w, 'a', encoding='utf-8') as log_py:
             traceback.print_exc(file=log_py)
 
             # throw except.
@@ -46,7 +46,7 @@ try:
         un_regex_word = 'undefined'
 
         try:
-            with open("./effect.txt", mode='a') as f:
+            with open("./effect.txt", mode='a', encoding='utf-8') as f:
                 for word in sorted(
                         freq,
                         key=freq.get,  # type: ignore
