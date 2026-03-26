@@ -313,7 +313,7 @@ yarn licenses v1.22.22
    ├─ is-promise@4.0.0
    │  ├─ URL: https://github.com/then/is-promise.git
    │  └─ VendorName: ForbesLindesay
-   ├─ jn-server@1.0.6
+   ├─ jn-server@1.0.7
    │  ├─ URL: https://github.com/takkii/json-server.git
    │  ├─ VendorName: Takayuki Kamiyama
    │  └─ VendorUrl: http://pieceof.shop/
@@ -444,7 +444,7 @@ yarn licenses v1.22.22
       ├─ URL: https://github.com/sindresorhus/yn.git
       ├─ VendorName: Sindre Sorhus
       └─ VendorUrl: sindresorhus.com
-Done in 0.59s.
+Done in 0.38s.
 ```
 
-> ChangeLogs: 2026/03/24
+> ChangeLogs: 2026/03/26
