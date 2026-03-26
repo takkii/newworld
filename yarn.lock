@@ -473,10 +473,10 @@ is-promise@^4.0.0:
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-4.0.0.tgz#42ff9f84206c1991d26debf520dd5c01042dd2f3"
   integrity sha512-hvpoI6korhJMnej285dSg6nu1+e6uxs7zG3BYAm5byqDsgJNWwxzM6z6iZiAgQR4TJ30JmBTOwqZUw3WlyH3AQ==
 
-jn-server@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/jn-server/-/jn-server-1.0.6.tgz#822f6d09ac80af8a82ed226a27a303e55243f0cb"
-  integrity sha512-tCubaMET8z8llo6g0rJyO39ntTH988mvPlGg6Tlv3sEVJXn27GCJbf27WZZc0qewz5qSTut11F/CbD4exN0DTQ==
+jn-server@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/jn-server/-/jn-server-1.0.7.tgz#25821e0bd754b1280040a5e28502cc0093960de3"
+  integrity sha512-QJ6xFFs2OIXskb1pkA8Hi3cv9ZWMP76DVq34yvdoPrzZ4/L6o/a/VgP+2nDWseHs5f5nj1KHJUwvLDUlkMworQ==
   dependencies:
     npm-check-updates "^19.6.5"
     ts-node "^10.9.2"
