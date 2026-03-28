@@ -63,7 +63,7 @@ yarn licenses v1.22.22
 │  ├─ log4js@6.9.1
 │  │  ├─ URL: https://github.com/log4js-node/log4js-node.git
 │  │  └─ VendorUrl: https://log4js-node.github.io/log4js-node/
-│  ├─ npm-check-updates@19.6.5
+│  ├─ npm-check-updates@19.6.6
 │  │  ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
 │  │  ├─ VendorName: Tomas Junnonen
 │  │  └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
@@ -353,7 +353,7 @@ yarn licenses v1.22.22
    │  └─ URL: https://github.com/jshttp/on-finished.git
    ├─ parseurl@1.3.3
    │  └─ URL: https://github.com/pillarjs/parseurl.git
-   ├─ path-to-regexp@8.3.0
+   ├─ path-to-regexp@8.4.0
    │  └─ URL: https://github.com/pillarjs/path-to-regexp.git
    ├─ proxy-addr@2.0.7
    │  ├─ URL: https://github.com/jshttp/proxy-addr.git
@@ -444,7 +444,7 @@ yarn licenses v1.22.22
       ├─ URL: https://github.com/sindresorhus/yn.git
       ├─ VendorName: Sindre Sorhus
       └─ VendorUrl: sindresorhus.com
-Done in 0.38s.
+Done in 0.54s.
 ```
 
-> ChangeLogs: 2026/03/26
+> ChangeLogs: 2026/03/29
