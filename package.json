@@ -23,7 +23,7 @@
     "jn-server": "^1.0.7",
     "log4js": "^6.9.1",
     "node-fetch": "^3.3.2",
-    "npm-check-updates": "^19.6.5",
+    "npm-check-updates": "^19.6.6",
     "serve-favicon": "^2.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
