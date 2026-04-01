@@ -3,8 +3,8 @@ import {existsSync, readFileSync} from 'node:fs';
 import log4js from 'log4js';
 import express from 'express';
 import favicon from 'serve-favicon';
-import path from 'path';
-import {fileURLToPath} from 'url';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
