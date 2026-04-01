@@ -10,12 +10,12 @@ yarn upgrade
 ```
 
 ```markdown
-# npm / install
-npm install -g ts-node
+# npm install
 npm install -g forever
 npm install -g jn-server
+npm install -g ts-node
 
-# json-server / starting
+# ts-node/deno run
 git clone git@github.com:takkii/json-server.git
 cd json-server/bin
 deno run --allow-env=. jns.ts
@@ -27,10 +27,10 @@ Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 # Move to Project.
 cd newworld/json
 
-# Node.js run
+# ts-node / run
 ts-node toss.ts
 
-# deno run
+# deno / run
 deno run --allow-env=. toss.ts
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > I'm Select A 
@@ -44,7 +44,7 @@ ts-node app.ts 3000 localhost 1337 datas
 # deno(Recommended): http://localhost:3000
 deno run --allow-env=. app.ts 3000 localhost 1337 datas
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
-> I'm Select A 
+> I'm Select A
 
 # Start, perpetuation.
 forever start -v -c ts-node app.ts 3000 localhost 1337 datas
