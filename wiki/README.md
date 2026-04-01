@@ -36,16 +36,16 @@ Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 # Move, newworld project.
 cd ..
 
-# ts-node: http://localhost:3000
+# ts-node(for vps): http://localhost:3000
 ts-node app.ts 3000 localhost 1337 datas
 
-# deno: http://localhost:3000
+# deno(Recommended): http://localhost:3000
 deno run --allow-env=. app.ts 3000 localhost 1337 datas
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > I'm Select A 
 
 # Start, perpetuation.
-forever start -v -c ts-node app.ts 3000
+forever start -v -c ts-node app.ts 3000 localhost 1337 datas
 
 # Stop, perpetuation.
 forever stop app.ts
