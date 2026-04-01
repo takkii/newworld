@@ -37,10 +37,10 @@ Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 cd ..
 
 # ts-node: http://localhost:3000
-ts-node app.ts 3000
+ts-node app.ts 3000 localhost 1337 datas
 
 # deno: http://localhost:3000
-deno run --allow-env=. app.ts 3000
+deno run --allow-env=. app.ts 3000 localhost 1337 datas
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > I'm Select A 
 
