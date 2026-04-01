@@ -28,11 +28,21 @@ cd newworld/json
 # Node.js run
 ts-node toss.ts
 
+# deno run
+deno run --allow-env=. toss.ts
+Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
+> I'm Select A 
+
 # Move, newworld project.
 cd ..
 
-# http://localhost:3000
+# ts-node: http://localhost:3000
 ts-node app.ts 3000
+
+# deno: http://localhost:3000
+deno run --allow-env=. app.ts 3000
+Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
+> I'm Select A 
 
 # Start, perpetuation.
 forever start -v -c ts-node app.ts 3000
