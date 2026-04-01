@@ -77,6 +77,10 @@ yarn licenses v1.22.22
 │  │  ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
 │  │  ├─ VendorName: Tomas Junnonen
 │  │  └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
+│  ├─ npm-check-updates@20.0.0
+│  │  ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
+│  │  ├─ VendorName: Tomas Junnonen
+│  │  └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
 │  ├─ typescript@5.9.3
 │  │  ├─ URL: https://github.com/microsoft/TypeScript.git
 │  │  ├─ VendorName: Microsoft Corp.
@@ -363,7 +367,7 @@ yarn licenses v1.22.22
    │  └─ URL: https://github.com/jshttp/on-finished.git
    ├─ parseurl@1.3.3
    │  └─ URL: https://github.com/pillarjs/parseurl.git
-   ├─ path-to-regexp@8.4.0
+   ├─ path-to-regexp@8.4.1
    │  └─ URL: https://github.com/pillarjs/path-to-regexp.git
    ├─ proxy-addr@2.0.7
    │  ├─ URL: https://github.com/jshttp/proxy-addr.git
@@ -454,7 +458,7 @@ yarn licenses v1.22.22
       ├─ URL: https://github.com/sindresorhus/yn.git
       ├─ VendorName: Sindre Sorhus
       └─ VendorUrl: sindresorhus.com
-Done in 0.54s.
+Done in 0.34s.
 ```
 
-> ChangeLogs: 2026/03/29
+> ChangeLogs: 2026/04/01
