@@ -18,7 +18,9 @@ npm install -g jn-server
 # json-server / starting
 git clone git@github.com:takkii/json-server.git
 cd json-server/bin
-ts-node jns.ts
+deno run --allow-env=. jns.ts
+Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
+> I'm Select A 
 
 # New Tab or Window.
 
@@ -36,7 +38,7 @@ Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 # Move, newworld project.
 cd ..
 
-# ts-node(for vps): http://localhost:3000
+# ts-node(deprecated): http://localhost:3000
 ts-node app.ts 3000 localhost 1337 datas
 
 # deno(Recommended): http://localhost:3000
@@ -49,6 +51,8 @@ forever start -v -c ts-node app.ts 3000 localhost 1337 datas
 
 # Stop, perpetuation.
 forever stop app.ts
+
+※ I'm considering deno/docker container for persistence.
 ```
 
 ##### 「単語があるかないか検索🔎の仕様」
@@ -57,9 +61,9 @@ forever stop app.ts
 
 > ❎️「見つかりませんでした。」が表示されます。
 
-※ Windows/Linuxカーネルのみ対応です。
+※ コマンドラインで引数を渡すように変更しました。
 
-→ それ以外、起動時に環境のチェックが入りIPアドレスに0.0.0.0を指定します。
+→ ポート番号(起動時) ローカルホスト(127.0.0.1) ポート番号(アクセス先) アクセス先ページ名 
 
 > yarn licenses list
 
@@ -327,7 +331,7 @@ yarn licenses v1.22.22
    ├─ is-promise@4.0.0
    │  ├─ URL: https://github.com/then/is-promise.git
    │  └─ VendorName: ForbesLindesay
-   ├─ jn-server@1.0.7
+   ├─ jn-server@1.0.8
    │  ├─ URL: https://github.com/takkii/json-server.git
    │  ├─ VendorName: Takayuki Kamiyama
    │  └─ VendorUrl: http://pieceof.shop/
@@ -458,7 +462,7 @@ yarn licenses v1.22.22
       ├─ URL: https://github.com/sindresorhus/yn.git
       ├─ VendorName: Sindre Sorhus
       └─ VendorUrl: sindresorhus.com
-Done in 0.34s.
+Done in 0.75s.
 ```
 
-> ChangeLogs: 2026/04/01
+> ChangeLogs: 2026/04/02
