@@ -1,6 +1,6 @@
 {
   "name": "newworld",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "Frontend Side for newworld.",
   "main": "app.ts",
   "type": "module",
@@ -11,7 +11,7 @@
     "expressjs",
     "frontend",
     "localhost",
-    "vps"
+    "deno"
   ],
   "author": "Takayuki Kamiyama",
   "license": "MIT",
