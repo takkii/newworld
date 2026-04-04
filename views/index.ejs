@@ -86,7 +86,8 @@
                 </div>
             </div>
             <div class="card">
-                <h3><a name="GitHubPage"><p><a href="https://takkii.github.io/"><%= locals.githubpages %></a></p></a></h3>
+                <h3><a name="GitHubPage"><p><a href="https://takkii.github.io/"><%= locals.githubpages %></a></p></a>
+                </h3>
                 <p><img src="images/GitHubIO.gif" alt="GitHub pages"></p>
                 <div class="alert">
                     <h3>
@@ -113,7 +114,7 @@
                 function searchWord(word) {
                     if (!document.getElementsByTagName) return;
                     if (!word) return;
-                    const arrayA = document.getElementsByTagName("div", "a", "p");
+                    const arrayA = document.getElementsByTagName("p", "a");
                     for (let i = 0; i < arrayA.length; i++) {
                         if (arrayA[i].innerHTML.match(word)) {
                             if (arrayA[i].scrollIntoView)
@@ -126,9 +127,8 @@
                 }
             </script>
             <div align='right'>
-                <div class="font-color-blue-bold"><h5> 単語があるかないか検索🔎 </h5></div>
-                <form action="views/index.ejs" lang="ja" onsubmit="searchWord(this.elements['word'].value);
-          return false;">
+                <div class="font-color-blue-bold"><h5> 単語を検索 🔎 </h5></div>
+                <form action="./index.ejs" lang="ja" onsubmit="searchWord(this.elements['word'].value); return false;">
                     <input type="text" name="word" placeholder="検索する単語を入力">
                     <input type="submit" value="検索">
                 </form>
