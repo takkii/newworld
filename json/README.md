@@ -1,29 +1,24 @@
 <hr />
-
 <div align="center">
   <p><img src="../images/cats-paw.gif"></p>
-  <p><h2>TypeScriptでJSONをサーバーに投げます。</h2></p>
 </div>
-
-<div align="center">
-  <p><h3>ts-node/install/Throws, JSON DATA.</h3></p>
-  <p><h4><u>npm install -g ts-node</u></h4></p>
-  <p><h4><u>cd newworld/json</u></h4></p>
-  <p><h4><u>ts-node toss.ts</u></h4></p>
-</div>
+### TypeScriptでJSONをサーバーに投げます。
+<hr />
+```markdown
+# ts-node/install/Throws, JSON DATA.
+npm install -g ts-node
+cd newworld/json
+ts-node toss.ts
+```
 
 <hr />
 
-<div align="center">
-  <p><h3>Use Deno, Throws JSON DATA.</h3></p>
-  <p><h4><u>cd newworld/json</u></h4></p>
-  <p><h4><u>deno run --allow-env=. toss.ts</u></h4></p>
-</div>
+```markdown
+# Use Deno, Throws JSON DATA.
+cd newworld/json
+deno run --allow-env=. toss.ts
+```
 
 <hr />
-
-<div align="center">
-   <p><h4>※ Typescriptで、JSON RESTful Serverを操作するように変更しました。</h4></p>
-</div>
-
+_※ Typescriptで、JSON RESTful Serverを操作するように変更しました。_
 <hr />
