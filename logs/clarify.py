@@ -22,11 +22,16 @@ class Clarify(threading.Thread):
                       encoding='utf-8') as f:
                 word = f.read().splitlines()
 
-                # first line number.
-                top_num = int(0)
+                # Argument specification.
+                arg_sys = sys.argv
 
-                # End line number.
-                last_num = int(15)
+                # first line number, Example 0
+                top_str = arg_sys[2]
+                top_num = int(top_str)
+
+                # End line number, Example 15
+                last_str = arg_sys[3]
+                last_num = int(last_str)
 
                 # Specified, count line number to output.
                 target_lines = word[top_num:last_num]

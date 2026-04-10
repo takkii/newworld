@@ -27,6 +27,6 @@
 </div>
 
 <div align="center">
-   <p><h2><u>python .\clarify.py effect.txt</u></h2></p>
-   <p><h3><u>※ 先頭から15行目まで、effect.txtの内容を表示します。</u></h3></p>
+   <p><h2><u>python .\clarify.py effect.txt 0 15</u></h2></p>
+   <p><h3><u>※ 引数で指定した先頭から15行目まで、effect.txtの内容を表示します。</u></h3></p>
 </div>
