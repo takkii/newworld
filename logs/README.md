@@ -1,15 +1,16 @@
 <div align="center">
   <p><h1>「強力な空間切断系の魔法」</h1></p>
   <p><h3>※ 魔法レイルザイデンを言葉の比喩として使用しました。</h3></p>
+  <p><u>外部プロジェクトのシェルに<a href="https://github.com/takkii/golden_eagle/tree/main/wiki">PATH</a>を通してください。</u></p>
 </div>
 
 <div align="center">
   <p><img src="../images/reilsaiden.gif"></p>
 </div>
-
 <div align="center">
-  <p><h2><u>python .\railseiden.py newworld.log</u></h2></p>
+  <p><h2><u>railseiden newworld.log</u></h2></p>
 </div>
+
 
 <div align="center">
   <p><h3>生成されるeffect.txtの内容</h3></p>
@@ -27,6 +28,6 @@
 </div>
 
 <div align="center">
-   <p><h2><u>python .\clarify.py effect.txt 0 15</u></h2></p>
+   <p><h2><u>clarify.py effect.txt 0 15</u></h2></p>
    <p><h3><u>※ 引数で指定した先頭から15行目まで、effect.txtの内容を表示します。</u></h3></p>
 </div>
