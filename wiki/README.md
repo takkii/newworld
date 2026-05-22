@@ -18,7 +18,7 @@ npm install -g ts-node
 # ts-node/deno run
 git clone git@github.com:takkii/json-server.git
 cd json-server/bin
-deno run --allow-env=. jns.ts
+deno run --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > I'm Select A 
 
