@@ -251,7 +251,7 @@ yarn licenses v1.22.22
    │  ├─ URL: git+https://github.com/ljharb/es-errors.git
    │  ├─ VendorName: Jordan Harband
    │  └─ VendorUrl: https://github.com/ljharb/es-errors#readme
-   ├─ es-object-atoms@1.1.1
+   ├─ es-object-atoms@1.1.2
    │  ├─ URL: git+https://github.com/ljharb/es-object-atoms.git
    │  ├─ VendorName: Jordan Harband
    │  └─ VendorUrl: https://github.com/ljharb/es-object-atoms#readme
@@ -326,7 +326,7 @@ yarn licenses v1.22.22
    ├─ is-promise@4.0.0
    │  ├─ URL: https://github.com/then/is-promise.git
    │  └─ VendorName: ForbesLindesay
-   ├─ jn-server@1.0.9
+   ├─ jn-server@1.1.0
    │  ├─ URL: https://github.com/takkii/json-server.git
    │  ├─ VendorName: Takayuki Kamiyama
    │  └─ VendorUrl: http://pieceof.shop/
@@ -457,7 +457,7 @@ yarn licenses v1.22.22
       ├─ URL: https://github.com/sindresorhus/yn.git
       ├─ VendorName: Sindre Sorhus
       └─ VendorUrl: sindresorhus.com
-Done in 0.39s.
+Done in 0.37s.
 ```
 
-> ChangeLogs: 2026/05/22
+> ChangeLogs: 2026/05/23
