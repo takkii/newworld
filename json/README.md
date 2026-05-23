@@ -7,20 +7,16 @@
 
   <hr />
 
-```markdown
-# ts-node/install/Throws, JSON DATA.
-npm install -g ts-node
-cd newworld/json
-ts-node toss.ts
-```
+  <p><h3>ts-node/install/Throws, JSON DATA.</h3></p>
+  <p><h4>npm install -g ts-node</h4></p>
+  <p><h4>cd newworld/json</h4></p>
+  <p><h4>ts-node toss.ts</h4></p>
 
   <hr />
 
-```markdown
-# Use Deno, Throws JSON DATA.
-cd newworld/json
-deno run --allow-env=. toss.ts
-```
+  <p><h3> Use Deno, Throws JSON DATA.</h3></p>
+  <p><h4>cd newworld/json</h4></p>
+  <p><h4>deno run --allow-env=. toss.ts</h4></p>
 
   <hr />
 
