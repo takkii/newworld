@@ -1,8 +1,7 @@
 <hr />
 
 <div align="center">
-  <p><img src="../images/cats-paw.gif"></p>
-</div>
+  <p><img src="https://github.com/takkii/json-server/blob/main/images/nokogiri.gif"><p>
 
 ### TypeScriptでJSONをサーバーに投げます。
 
@@ -10,17 +9,16 @@
 
 ```markdown
 # ts-node/install/Throws, JSON DATA.
-npm install -g ts-node
-cd newworld/json
-ts-node toss.ts
+
+npm install -g ts-node cd newworld/json ts-node toss.ts
 ```
 
 <hr />
 
 ```markdown
 # Use Deno, Throws JSON DATA.
-cd newworld/json
-deno run --allow-env=. toss.ts
+
+cd newworld/json deno run --allow-env=. toss.ts
 ```
 
 <hr />
