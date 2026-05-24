@@ -1,7 +1,7 @@
 <hr />
 
 <div align="center">
-  <p><img src="https://github.com/takkii/json-server/blob/main/images/nokogiri.gif"><p>
+  <p><img src="https://github.com/takkii/json-server/blob/main/images/tools.gif"><p>
 
   ### TypeScriptでJSONをサーバーに投げます。
 
