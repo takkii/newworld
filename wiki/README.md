@@ -15,7 +15,10 @@ npm install -g forever
 npm install -g jn-server
 npm install -g ts-node
 
-# ts-node/deno run
+# gem install
+gem install sheltered-girl
+
+# deno run / jnserver
 git clone git@github.com:takkii/json-server.git
 cd json-server/bin
 deno run --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
@@ -26,16 +29,17 @@ Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 cd $HOME
 git clone git@github.com:takkii/newworld.git
 
-# ① Rubygems/sheltered-girl
+# ① sheltered-girl run
 sheltered-girl -p ~/newworld/json/data.json http://localhost:1337/datas
+sheltered-girl post ~/newworld/json/data.json http://localhost:1337/datas
 
 # Move to Project.
 cd newworld/json
 
-# ② ts-node / run
+# ② ts-node run
 ts-node toss.ts
 
-# ③ deno / run
+# ③ deno run
 deno run --allow-env=. toss.ts
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > I'm Select A
@@ -58,8 +62,6 @@ forever start -v -c ts-node app.ts 3000 localhost 1337 datas
 
 # Stop, perpetuation.
 forever stop app.ts
-
-※ I'm considering deno/docker container for persistence.
 ```
 
 ##### 「単語があるかないか検索🔎の仕様」
