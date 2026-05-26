@@ -1,4 +1,4 @@
-### User ENV
+### 環境構築🌐
 
 ```markdown
 # Update, package.json
@@ -23,7 +23,7 @@ git clone git@github.com:takkii/json-server.git
 cd json-server/bin
 deno run --allow-env=. jnserver 1337 cdae648a-7d2f-40c8-bcc8-297335e27f67
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
-> I'm Select A 
+> I'm Select all A 
 
 # New Tab or Window.
 cd $HOME
@@ -42,7 +42,7 @@ ts-node toss.ts
 # ③ deno run
 deno run --allow-env=. toss.ts
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
-> I'm Select A
+> I'm Select all A
 
 ※ ①②③, Please perform one of the following actions.
 
@@ -55,7 +55,7 @@ ts-node app.ts 3000 localhost 1337 datas
 # deno(Recommended): http://localhost:3000
 deno run --allow-env=. app.ts 3000 localhost 1337 datas
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
-> I'm Select A
+> I'm Select all A
 
 # Start, perpetuation.
 forever start -v -c ts-node app.ts 3000 localhost 1337 datas
@@ -70,7 +70,7 @@ forever stop app.ts
 
 > ❎️「見つかりませんでした。」が表示されます。
 
-※ コマンドラインで引数を渡すように変更しました。
+※ app.ts / コマンドライン引数を渡すように変更しました。
 
 → ポート番号(起動時) ローカルホスト(127.0.0.1) ポート番号(アクセス先) アクセス先ページ名 
 
@@ -469,4 +469,4 @@ yarn licenses v1.22.22
 Done in 0.37s.
 ```
 
-> ChangeLogs: 2026/05/23
+> 更新履歴: 2026/05/27🔄
