@@ -23,6 +23,7 @@ Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 > I'm Select A 
 
 # New Tab or Window.
+cd $HOME
 git clone git@github.com:takkii/newworld.git
 
 # ① Rubygems/sheltered-girl
