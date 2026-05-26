@@ -24,16 +24,21 @@ Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
 
 # New Tab or Window.
 
+# ① Rubygems/sheltered-girl
+sheltered-girl -p ~/newworld/json/data.json http://localhost:1337/datas
+
 # Move to Project.
 cd newworld/json
 
-# ts-node / run
+# ② ts-node / run
 ts-node toss.ts
 
-# deno / run
+# ③ deno / run
 deno run --allow-env=. toss.ts
 Allow? [y/n/A] (y = yes, allow; n = no, deny; A = allow all net permissions) > A
-> I'm Select A 
+> I'm Select A
+
+※ ①②③, Please perform one of the following actions.
 
 # Move, newworld project.
 cd ..
