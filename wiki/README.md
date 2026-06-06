@@ -79,14 +79,14 @@ forever stop app.ts
 ```javascript
 yarn licenses v1.22.22
 ├─ Apache-2.0
-│  ├─ ejs@5.0.2
+│  ├─ ejs@6.0.1
 │  │  ├─ URL: git://github.com/mde/ejs.git
 │  │  ├─ VendorName: Matthew Eernisse
 │  │  └─ VendorUrl: https://github.com/mde/ejs
 │  ├─ log4js@6.9.1
 │  │  ├─ URL: https://github.com/log4js-node/log4js-node.git
 │  │  └─ VendorUrl: https://log4js-node.github.io/log4js-node/
-│  ├─ npm-check-updates@22.2.0
+│  ├─ npm-check-updates@22.2.3
 │  │  ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
 │  │  ├─ VendorName: Tomas Junnonen
 │  │  └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
@@ -164,7 +164,7 @@ yarn licenses v1.22.22
    ├─ @types/http-errors@2.0.5
    │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
    │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/http-errors
-   ├─ @types/node@25.9.1
+   ├─ @types/node@25.9.2
    │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
    │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
    ├─ @types/qs@6.15.1
@@ -317,7 +317,7 @@ yarn licenses v1.22.22
    │  ├─ URL: git://github.com/inspect-js/has-symbols.git
    │  ├─ VendorName: Jordan Harband
    │  └─ VendorUrl: https://github.com/ljharb/has-symbols#readme
-   ├─ hasown@2.0.3
+   ├─ hasown@2.0.4
    │  ├─ URL: git+https://github.com/inspect-js/hasOwn.git
    │  ├─ VendorName: Jordan Harband
    │  └─ VendorUrl: https://github.com/inspect-js/hasOwn#readme
@@ -469,4 +469,4 @@ yarn licenses v1.22.22
 Done in 0.37s.
 ```
 
-> 更新履歴: 2026/05/27🔄
+> 更新履歴: 2026/06/06🔄
