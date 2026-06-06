@@ -18,19 +18,19 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
-    "ejs": "^5.0.2",
+    "ejs": "^6.0.1",
     "express": "^5.2.1",
     "jn-server": "^1.1.0",
     "log4js": "^6.9.1",
     "node-fetch": "^3.3.2",
-    "npm-check-updates": "^22.2.0",
+    "npm-check-updates": "^22.2.3",
     "serve-favicon": "^2.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^25.9.1",
+    "@types/node": "^25.9.2",
     "@types/serve-favicon": "^2.5.7"
   }
 }
