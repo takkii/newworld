@@ -13,3 +13,6 @@ package-lock.json
 # Ignore, .map file
 /json/toss.js.map
 app.js.map
+
+# Ignore, log file
+/logs/*.log

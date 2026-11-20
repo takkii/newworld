@@ -79,7 +79,11 @@ forever stop app.ts
 ```javascript
 yarn licenses v1.22.22
 ├─ Apache-2.0
-│  ├─ ejs@6.0.1
+│  ├─ @typescript/typescript-win32-x64@7.0.2
+│  │  ├─ URL: https://github.com/microsoft/TypeScript.git
+│  │  ├─ VendorName: Microsoft Corp.
+│  │  └─ VendorUrl: https://www.typescriptlang.org/
+│  ├─ ejs@7.0.2
 │  │  ├─ URL: git://github.com/mde/ejs.git
 │  │  ├─ VendorName: Matthew Eernisse
 │  │  └─ VendorUrl: https://github.com/mde/ejs
@@ -90,14 +94,22 @@ yarn licenses v1.22.22
 │  │  ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
 │  │  ├─ VendorName: Tomas Junnonen
 │  │  └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
-│  └─ typescript@6.0.3
+│  ├─ npm-check-updates@23.1.1
+│  │  ├─ URL: git+https://github.com/raineorshine/npm-check-updates.git
+│  │  ├─ VendorName: Tomas Junnonen
+│  │  └─ VendorUrl: https://github.com/raineorshine/npm-check-updates
+│  ├─ typescript@6.0.3
+│  │  ├─ URL: https://github.com/microsoft/TypeScript.git
+│  │  ├─ VendorName: Microsoft Corp.
+│  │  └─ VendorUrl: https://www.typescriptlang.org/
+│  └─ typescript@7.0.2
 │     ├─ URL: https://github.com/microsoft/TypeScript.git
 │     ├─ VendorName: Microsoft Corp.
 │     └─ VendorUrl: https://www.typescriptlang.org/
 ├─ BSD-3-Clause
 │  ├─ diff@4.0.4
 │  │  └─ URL: git://github.com/kpdecker/jsdiff.git
-│  └─ qs@6.15.2
+│  └─ qs@6.17.1
 │     ├─ URL: https://github.com/ljharb/qs.git
 │     └─ VendorUrl: https://github.com/ljharb/qs
 ├─ ISC
@@ -128,6 +140,10 @@ yarn licenses v1.22.22
 └─ MIT
    ├─ @cspotcode/source-map-support@0.8.1
    │  └─ URL: https://github.com/cspotcode/node-source-map-support
+   ├─ @deno/win32-x64@2.9.6
+   │  ├─ URL: git+https://github.com/denoland/deno.git
+   │  ├─ VendorName: David Sherret
+   │  └─ VendorUrl: https://deno.land/
    ├─ @jridgewell/resolve-uri@3.1.2
    │  ├─ URL: https://github.com/jridgewell/resolve-uri
    │  └─ VendorName: Justin Ridgewell
@@ -167,6 +183,9 @@ yarn licenses v1.22.22
    ├─ @types/node@25.9.2
    │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
    │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
+   ├─ @types/node@26.6.6
+   │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+   │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
    ├─ @types/qs@6.15.1
    │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
    │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/qs
@@ -193,9 +212,9 @@ yarn licenses v1.22.22
    ├─ arg@4.1.3
    │  ├─ URL: https://github.com/zeit/arg.git
    │  └─ VendorName: Josh Junon
-   ├─ body-parser@2.2.2
+   ├─ body-parser@2.4.0
    │  └─ URL: https://github.com/expressjs/body-parser.git
-   ├─ bootstrap@5.3.8
+   ├─ bootstrap@5.3.9
    │  ├─ URL: git+https://github.com/twbs/bootstrap.git
    │  ├─ VendorName: The Bootstrap Authors
    │  └─ VendorUrl: https://getbootstrap.com/
@@ -211,13 +230,13 @@ yarn licenses v1.22.22
    │  ├─ URL: git+https://github.com/ljharb/call-bound.git
    │  ├─ VendorName: Jordan Harband
    │  └─ VendorUrl: https://github.com/ljharb/call-bound#readme
-   ├─ content-disposition@1.1.0
+   ├─ content-disposition@2.0.1
    │  ├─ URL: https://github.com/jshttp/content-disposition.git
    │  └─ VendorName: Douglas Christopher Wilson
-   ├─ content-type@1.0.5
+   ├─ content-type@2.0.0
    │  ├─ URL: https://github.com/jshttp/content-type.git
    │  └─ VendorName: Douglas Christopher Wilson
-   ├─ content-type@2.0.0
+   ├─ content-type@2.1.0
    │  ├─ URL: https://github.com/jshttp/content-type.git
    │  └─ VendorName: Douglas Christopher Wilson
    ├─ cookie-signature@1.2.2
@@ -239,6 +258,10 @@ yarn licenses v1.22.22
    │  ├─ URL: git://github.com/debug-js/debug.git
    │  ├─ VendorName: Josh Junon
    │  └─ VendorUrl: https://github.com/qix-
+   ├─ deno@2.9.6
+   │  ├─ URL: git+https://github.com/denoland/deno.git
+   │  ├─ VendorName: the Deno authors
+   │  └─ VendorUrl: https://deno.com/
    ├─ depd@2.0.0
    │  ├─ URL: https://github.com/dougwilson/nodejs-depd.git
    │  └─ VendorName: Douglas Christopher Wilson
@@ -268,7 +291,7 @@ yarn licenses v1.22.22
    │  └─ URL: https://github.com/component/escape-html.git
    ├─ etag@1.8.1
    │  └─ URL: https://github.com/jshttp/etag.git
-   ├─ express@5.2.1
+   ├─ express@5.3.0
    │  ├─ URL: https://github.com/expressjs/express.git
    │  ├─ VendorName: TJ Holowaychuk
    │  └─ VendorUrl: https://expressjs.com/
@@ -329,6 +352,10 @@ yarn licenses v1.22.22
    │  ├─ URL: https://github.com/pillarjs/iconv-lite.git
    │  ├─ VendorName: Alexander Shtuchkin
    │  └─ VendorUrl: https://github.com/pillarjs/iconv-lite
+   ├─ iconv-lite@0.7.3
+   │  ├─ URL: https://github.com/pillarjs/iconv-lite.git
+   │  ├─ VendorName: Alexander Shtuchkin
+   │  └─ VendorUrl: https://github.com/pillarjs/iconv-lite
    ├─ ipaddr.js@1.9.1
    │  ├─ URL: git://github.com/whitequark/ipaddr.js
    │  └─ VendorName: whitequark
@@ -377,7 +404,7 @@ yarn licenses v1.22.22
    │  └─ URL: https://github.com/pillarjs/parseurl.git
    ├─ path-to-regexp@8.4.2
    │  └─ URL: https://github.com/pillarjs/path-to-regexp.git
-   ├─ proxy-addr@2.0.7
+   ├─ proxy-addr@2.0.8
    │  ├─ URL: https://github.com/jshttp/proxy-addr.git
    │  └─ VendorName: Douglas Christopher Wilson
    ├─ range-parser@1.2.1
@@ -424,7 +451,7 @@ yarn licenses v1.22.22
    │  ├─ URL: git+https://github.com/ljharb/side-channel-weakmap.git
    │  ├─ VendorName: Jordan Harband
    │  └─ VendorUrl: https://github.com/ljharb/side-channel-weakmap#readme
-   ├─ side-channel@1.1.0
+   ├─ side-channel@1.1.1
    │  ├─ URL: git+https://github.com/ljharb/side-channel.git
    │  ├─ VendorName: Jordan Harband
    │  └─ VendorUrl: https://github.com/ljharb/side-channel#readme
@@ -443,6 +470,9 @@ yarn licenses v1.22.22
    ├─ type-is@2.1.0
    │  └─ URL: https://github.com/jshttp/type-is.git
    ├─ undici-types@7.24.6
+   │  ├─ URL: git+https://github.com/nodejs/undici.git
+   │  └─ VendorUrl: https://undici.nodejs.org/
+   ├─ undici-types@8.9.0
    │  ├─ URL: git+https://github.com/nodejs/undici.git
    │  └─ VendorUrl: https://undici.nodejs.org/
    ├─ universalify@0.1.2
@@ -466,7 +496,16 @@ yarn licenses v1.22.22
       ├─ URL: https://github.com/sindresorhus/yn.git
       ├─ VendorName: Sindre Sorhus
       └─ VendorUrl: sindresorhus.com
-Done in 0.37s.
+Done in 0.81s.
 ```
 
-> 更新履歴: 2026/06/06🔄
+### 削除
+
+```markdown
+   ├─ jn-server@1.1.0
+   │  ├─ URL: https://github.com/takkii/json-server.git
+   │  ├─ VendorName: Takayuki Kamiyama
+   │  └─ VendorUrl: http://pieceof.shop/
+```
+
+_更新履歴: 2026/11/20 🔄_
