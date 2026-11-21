@@ -14,13 +14,12 @@
     "deno"
   ],
   "author": "Takayuki Kamiyama",
-  "license": "MIT",
+  "license": "VIM",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.9",
+    "bootstrap": "^5.3.8",
     "ejs": "^7.0.2",
     "express": "^5.3.0",
-    "jn-server": "^1.1.0",
     "log4js": "^6.9.1",
     "node-fetch": "^3.3.2",
     "npm-check-updates": "^23.1.1",
