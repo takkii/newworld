@@ -1,3 +1,11 @@
+<div align="center">
+  <img src="../images/startpage.gif">
+  <br /><br />
+  <h3><p>※ このシステムは、接続元のIPアドレスをログに書き出します。</p></h3>
+  <h3><p>不正アクセスなどを検知するセキュリティ対策のため、ご了承ください。</p></h3>
+  <br />
+</div>
+
 ### 環境構築🌐
 
 ```markdown
@@ -508,4 +516,4 @@ Done in 0.81s.
    │  └─ VendorUrl: http://pieceof.shop/
 ```
 
-_更新履歴: 2026/11/20 🔄_
+_更新履歴: 2026/11/22 🔄_
