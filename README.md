@@ -1,8 +1,5 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Vim](https://img.shields.io/badge/-Vim-019733.svg?logo=vim&style=flat) [![GitHub Status](https://img.shields.io/github/last-commit/takkii/newworld.svg?style=flat)](GitHub) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/takkii/newworld/total)
 
-
-[![NPM](https://nodei.co/npm/jn-server.png?compact=true)](https://nodei.co/npm/jn-server/)
-
 <div align="center">
   <br />
   <h1><p><a href="https://youtu.be/fap4OGIeaW4?si=yBbFnSp0Pk_4cXBc">Newworld</a> Project.</p></h1>
